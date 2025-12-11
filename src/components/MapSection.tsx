@@ -1,7 +1,7 @@
 import { MapPin } from "lucide-react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
-import { MAPS_EMBED_URL } from "../constants";
+import { MAPS_EMBED_URL, MAPS_DIRECTIONS_URL } from "../constants";
 
 export function MapSection() {
   const titleRef = useScrollAnimation();
@@ -41,9 +41,14 @@ export function MapSection() {
                 <p className="text-gray-400 mb-2 text-sm sm:text-base font-light">
                   {t.about.address}
                 </p>
-                <p className="text-lg sm:text-xl md:text-2xl font-light text-white break-words mb-3">
+                <a
+                  href={MAPS_DIRECTIONS_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg sm:text-xl md:text-2xl font-light text-white break-words mb-3 hover:text-[#6F3417] transition-colors cursor-pointer inline-block"
+                >
                   {t.map.address}
-                </p>
+                </a>
                 <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed font-light italic mb-3">
                   {t.map.description}
                 </p>
@@ -63,7 +68,7 @@ export function MapSection() {
                 : "opacity-0 translate-y-10"
             }`}
           >
-            <div className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden">
+            <div className="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] overflow-hidden relative">
               <iframe
                 src={MAPS_EMBED_URL}
                 width="100%"
@@ -73,6 +78,13 @@ export function MapSection() {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="w-full h-full"
+              />
+              <a
+                href={MAPS_DIRECTIONS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="absolute inset-0 z-10 cursor-pointer"
+                aria-label="Open directions in Google Maps"
               />
             </div>
           </div>
