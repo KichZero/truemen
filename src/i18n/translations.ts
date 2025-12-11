@@ -21,8 +21,9 @@ export const translations = {
     },
     about: {
       title: 'DESPRE SALON',
-      founderName: 'Adrian',
-      founderTitle: 'Proprietar',
+      founderName1: 'Adrian',
+      founderName2: 'Denis',
+      founderTitle: 'Fondator',
       founderQuote: 'Am deschis acest salon pentru a face oamenii fericiți cu tunsori perfecte și cel mai bun serviciu.',
       text1: '— locul unde stilul întâlnește profesionalismul. Creăm imagini care evidențiază individualitatea ta.',
       features: {
@@ -98,9 +99,10 @@ export const translations = {
     },
     about: {
       title: 'ABOUT THE SALON',
-      founderName: 'Adrian',
-      founderTitle: 'Owner',
-      founderQuote: 'I opened this salon to make people happy with perfect haircuts and the best service.',
+      founderName1: 'Adrian',
+      founderName2: 'Denis',
+      founderTitle: 'Founder',
+      founderQuote: 'We opened this salon to make people happy with perfect haircuts and the best service.',
       text1: '— where style meets professionalism. We create looks that highlight your individuality.',
       features: {
         equipment: 'Modern equipment',
@@ -175,9 +177,10 @@ export const translations = {
     },
     about: {
       title: 'О САЛОНЕ',
-      founderName: 'Adrian',
-      founderTitle: 'Владелец',
-      founderQuote: 'Я открыл этот салон, чтобы радовать людей крутыми стрижками и лучшим сервисом.',
+      founderName1: 'Adrian',
+      founderName2: 'Denis',
+      founderTitle: 'Основатель',
+      founderQuote: 'Мы открыли этот салон, чтобы радовать людей крутыми стрижками и лучшим сервисом.',
       text1: '— место, где стиль встречается с профессионализмом. Мы создаем образы, которые подчеркивают вашу индивидуальность.',
       features: {
         equipment: 'Современное оборудование',
